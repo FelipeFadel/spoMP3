@@ -14,10 +14,6 @@ import MOCK_DATA from "@/MOCK_DATA.json";
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      {/* {MOCK_DATA.map((music) => (
-        <CardMusic key={music.id} {...music} />
-      ))} */}
-
       <FlatList
         data={MOCK_DATA}
         renderItem={({ item }) => <CardMusic {...item} />}
