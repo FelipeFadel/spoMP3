@@ -1,12 +1,5 @@
 import CardMusic from "@/components/CardMusic";
-import { useState } from "react";
-import {
-  FlatList,
-  Image,
-  ScrollView,
-  Text,
-  TouchableOpacity,
-} from "react-native";
+import { FlatList } from "react-native";
 import { StyleSheet, View } from "react-native";
 
 import MOCK_DATA from "@/MOCK_DATA.json";

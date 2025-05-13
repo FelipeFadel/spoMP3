@@ -15,7 +15,8 @@ export default function Layout() {
       <Stack.Screen
         name="post/[id]"
         options={{
-          title: "[id]",
+          presentation: "transparentModal",
+          animation: "slide_from_bottom",
           headerStyle: { backgroundColor: "#121212" },
           headerTintColor: "#fff",
           headerTitleStyle: {

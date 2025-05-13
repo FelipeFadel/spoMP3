@@ -1,6 +1,7 @@
 import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
 import React, { useState } from "react";
 import { useRouter } from "expo-router";
+import { Icon } from "react-native-elements";
 
 type cardProps = {
   id: string;
@@ -13,11 +14,9 @@ export default function CardMusic({ id, title, artist, imgUrl }: cardProps) {
   const router = useRouter();
 
   const onPress = () => {
-    router.push({
-      pathname: "/post/[id]",
-      params: { id: id.toString(), title, artist, imgUrl },
-    });
+    router.push(`/post/${id}`);
   };
+
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.button} onPress={onPress}>
@@ -33,16 +32,28 @@ export default function CardMusic({ id, title, artist, imgUrl }: cardProps) {
           <Text style={styles.subTitle}>{artist}</Text>
         </View>
       </TouchableOpacity>
+      <TouchableOpacity>
+        <Icon
+          name="ellipsis-vertical"
+          type="ionicon"
+          size={25}
+          color="rgb(255 255 255)"
+        />
+      </TouchableOpacity>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 15,
+    marginTop: 5,
     alignItems: "center",
-    backgroundColor: "#121212",
-    width: "100%",
+    alignSelf: "center",
+    backgroundColor: "rgb(30 30 30)",
+    width: "98%",
+    flexDirection: "row",
+    borderRadius: 5,
+    padding: 10,
   },
   button: {
     flexDirection: "row",
@@ -50,8 +61,6 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
     width: "90%",
     height: 60,
-    borderRadius: 5,
-    padding: 10,
   },
   title: {
     fontSize: 20,

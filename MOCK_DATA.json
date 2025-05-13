@@ -1,86 +1,86 @@
 [
   {
-    "id": "qwfqwf",
+    "id": "1",
     "title": "American Idiot",
-    "artist": "Dia Verde",
-    "imgUrl": "https://upload.wikimedia.org/wikipedia/pt/3/32/AmericanIdiot.jpg"
+    "artist": "Green Day",
+    "imgUrl": "https://i.scdn.co/image/ab67616d0000b2739079e678be6b947cc2b3b5c6",
+    "audioUrl": "https://github.com/FelipeFadel/spoMP3/raw/refs/heads/audio/assets/audios/Green%20Day%20-%20American%20Idiot.mp3"
   },
   {
-    "id": "qwfqwf",
+    "id": "2",
+    "title": "O Astronauta de Mármore",
+    "artist": "Nenhum De Nós",
+    "imgUrl": "https://i.scdn.co/image/ab67616d00001e02ee9ea4038372bdeb76768906",
+    "audioUrl": "https://github.com/FelipeFadel/spoMP3/raw/refs/heads/audio/assets/audios/Nenhum%20De%20N%C3%B3s%20-%20O%20Astronauta%20de%20M%C3%A1rmore%20(Starman).mp3"
+  },
+  {
+    "id": "3",
+    "title": "Timber Hearth",
+    "artist": "Andrew Prahlow",
+    "imgUrl": "https://medium-media.vgm.io/albums/39/100693/100693-8a002e3a8d71.jpg",
+    "audioUrl": "https://github.com/FelipeFadel/spoMP3/raw/refs/heads/audio/assets/audios/Andrew%20Prahlow%20-%20Timber%20Hearth.mp3"
+  },
+  {
+    "id": "4",
     "title": "Witchcraft",
-    "artist": "King Gizzard & The Lizzard Wizard",
-    "imgUrl": "https://i1.sndcdn.com/artworks-MQHP28Bed5Fn-0-t240x240.jpg"
+    "artist": "King Gizzard & The Lizard Wizard",
+    "imgUrl": "https://m.media-amazon.com/images/I/A1LTDMxkZ9L.jpg",
+    "audioUrl": "https://github.com/FelipeFadel/spoMP3/raw/refs/heads/audio/assets/audios/King%20Gizzard%20&%20The%20Lizard%20Wizard%20-%20Witchcraft.mp3"
   },
   {
-    "id": "qwfqwf",
-    "title": "Não sei o que",
-    "artist": "Usuario",
-    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMZNQt_VWVdQlBtGcGnjpiwH0KIwMJkzahcA&s"
+    "id": "5",
+    "title": "Gila Monster",
+    "artist": "King Gizzard & The Lizard Wizard",
+    "imgUrl": "https://m.media-amazon.com/images/I/A1LTDMxkZ9L.jpg",
+    "audioUrl": "https://github.com/FelipeFadel/spoMP3/raw/refs/heads/audio/assets/audios/King%20Gizzard%20&%20The%20Lizard%20Wizard%20-%20Gila%20Monster.mp3"
   },
   {
-    "id": "qwfqwf",
-    "title": "Psichedelic rock",
-    "artist": "Usuario",
-    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMZNQt_VWVdQlBtGcGnjpiwH0KIwMJkzahcA&s"
+    "id": "6",
+    "title": "Home Town",
+    "artist": "WITCH",
+    "imgUrl": "https://i.scdn.co/image/ab67616d0000b2731f6532cb4221b03594cc10c3",
+    "audioUrl": "https://github.com/FelipeFadel/spoMP3/raw/refs/heads/audio/assets/audios/WITCH%20-%20Home%20Town.mp3"
   },
   {
-    "id": "qwfqwf",
-    "title": "American Idiot",
-    "artist": "Dia Verde",
-    "imgUrl": "https://upload.wikimedia.org/wikipedia/pt/3/32/AmericanIdiot.jpg"
+    "id": "7",
+    "title": "Even Flow",
+    "artist": "Pearl Jam",
+    "imgUrl": "https://i.scdn.co/image/ab67616d0000b273d400d27cba05bb0545533864",
+    "audioUrl": "https://github.com/FelipeFadel/spoMP3/raw/refs/heads/audio/assets/audios/Pearl%20Jam%20-%20Even%20Flow.mp3"
   },
   {
-    "id": "qwfqwf",
-    "title": "Witchcraft",
-    "artist": "King Gizzard & The Lizzard Wizard",
-    "imgUrl": "https://i1.sndcdn.com/artworks-MQHP28Bed5Fn-0-t240x240.jpg"
+    "id": "8",
+    "title": "Schism",
+    "artist": "TOOL",
+    "imgUrl": "https://i.scdn.co/image/ab67616d0000b273ca41a947c13b78749c4953b1",
+    "audioUrl": "https://github.com/FelipeFadel/spoMP3/raw/refs/heads/audio/assets/audios/TOOL%20-%20Schism.mp3"
   },
   {
-    "id": "qwfqwf",
-    "title": "Não sei o que",
-    "artist": "Usuario",
-    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMZNQt_VWVdQlBtGcGnjpiwH0KIwMJkzahcA&s"
+    "id": "9",
+    "title": "Purple Haze",
+    "artist": "Jimi Hendrix",
+    "imgUrl": "https://psychedelicscene.com/wp-content/uploads/2023/05/Are-You-Experienced-album-cover.jpg",
+    "audioUrl": "https://github.com/FelipeFadel/spoMP3/raw/refs/heads/audio/assets/audios/Jimi%20Hendrix%20-%20Purple%20Haze.mp3"
   },
   {
-    "id": "qwfqwf",
-    "title": "American Idiot",
-    "artist": "Dia Verde",
-    "imgUrl": "https://upload.wikimedia.org/wikipedia/pt/3/32/AmericanIdiot.jpg"
+    "id": "10",
+    "title": "Blood and Thunder",
+    "artist": "Mastodon",
+    "imgUrl": "https://cdn-images.dzcdn.net/images/cover/8ee31df76ec6f6a905d802077fff71ef/1900x1900-000000-80-0-0.jpg",
+    "audioUrl": "https://github.com/FelipeFadel/spoMP3/raw/refs/heads/audio/assets/audios/Mastodon%20-%20Blood%20and%20Thunder.mp3"
   },
   {
-    "id": "qwfqwf",
-    "title": "Witchcraft",
-    "artist": "King Gizzard & The Lizzard Wizard",
-    "imgUrl": "https://i1.sndcdn.com/artworks-MQHP28Bed5Fn-0-t240x240.jpg"
+    "id": "11",
+    "title": "The Pot",
+    "artist": "TOOL",
+    "imgUrl": "https://i.scdn.co/image/ab67616d0000b273781369aabc39c792cc55604f",
+    "audioUrl": "https://github.com/FelipeFadel/spoMP3/raw/refs/heads/audio/assets/audios/TOOL%20-%20The%20Pot.mp3"
   },
   {
-    "id": "qwfqwf",
-    "title": "Não sei o que",
-    "artist": "Usuario",
-    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMZNQt_VWVdQlBtGcGnjpiwH0KIwMJkzahcA&s"
-  },
-  {
-    "id": "qwfqwf",
-    "title": "Psichedelic rock",
-    "artist": "Usuario",
-    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMZNQt_VWVdQlBtGcGnjpiwH0KIwMJkzahcA&s"
-  },
-  {
-    "id": "qwfqwf",
-    "title": "American Idiot",
-    "artist": "Dia Verde",
-    "imgUrl": "https://upload.wikimedia.org/wikipedia/pt/3/32/AmericanIdiot.jpg"
-  },
-  {
-    "id": "qwfqwf",
-    "title": "Witchcraft",
-    "artist": "King Gizzard & The Lizzard Wizard",
-    "imgUrl": "https://i1.sndcdn.com/artworks-MQHP28Bed5Fn-0-t240x240.jpg"
-  },
-  {
-    "id": "qwfqwf",
-    "title": "Não sei o que",
-    "artist": "Usuario",
-    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMZNQt_VWVdQlBtGcGnjpiwH0KIwMJkzahcA&s"
+    "id": "12",
+    "title": "Cemetery Gates",
+    "artist": "Pantera",
+    "imgUrl": "https://i.scdn.co/image/ab67616d0000b2730ce52f4ba340a1e459e6a978",
+    "audioUrl": "https://github.com/FelipeFadel/spoMP3/raw/refs/heads/audio/assets/audios/Pantera%20-%20Cemetery%20Gates.mp3"
   }
 ]
