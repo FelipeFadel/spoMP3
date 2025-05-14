@@ -14,7 +14,7 @@ O aplicativo spoMP3 é utilizado para armazenar e **escutar** suas musicas prefe
 
 ![Image](https://github.com/user-attachments/assets/cc5a5768-951d-4d23-8b7a-1f19bbf293f8)
 
-#### Reprodução: ao apertar uma das musicas uma stack do tipo modal ira abrir a reprodução dela
+#### Reprodução: ao apertar uma das musicas uma stack do tipo presentation ira abrir a reprodução dela
 
 ![Image](https://github.com/user-attachments/assets/a89e37f7-da0d-4b0b-944c-61a7db5028ba)
 
