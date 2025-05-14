@@ -8,7 +8,7 @@ O aplicativo spoMP3 é utilizado para armazenar e **escutar** suas musicas prefe
 
 ![Image](https://github.com/user-attachments/assets/a5b3e149-b52b-489d-be9d-45957fba19bb)
 
-#### Buscar: está serve para você procurar a musica que quero ouvir, tanto via artista quanto ao nome da musica em si
+#### Buscar: está serve para você procurar a musica que quer ouvir, tanto via artista quanto ao nome da musica em si
 
 ![Image](https://github.com/user-attachments/assets/7b31d2a4-a926-4474-9735-3126316b79ac)
 
