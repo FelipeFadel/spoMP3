@@ -6,11 +6,11 @@ import MOCK_DATA from "@/MOCK_DATA.json";
 
 type searchProps = {
   placeholder: string;
-  autoSearch?: string;
+  defaultSearch?: string;
 };
 
-export default function SearchBar({ placeholder, autoSearch }: searchProps) {
-  const [search, setSearch] = useState(autoSearch ?? "");
+export default function SearchBar({ placeholder, defaultSearch }: searchProps) {
+  const [search, setSearch] = useState(defaultSearch ?? "");
 
   const filteredData = MOCK_DATA.filter(
     (item) => item.title.includes(search) || item.artist.includes(search)

@@ -5,6 +5,7 @@ import { Audio } from "expo-av";
 import { Icon, Slider } from "react-native-elements";
 
 import MOCK_DATA from "@/MOCK_DATA.json";
+import ProgessBar from "@/components/ProgessBar";
 
 export default function id() {
   const { id } = useLocalSearchParams();
@@ -22,12 +23,14 @@ export default function id() {
 
     const loadAudio = async () => {
       if (music?.audioUrl) {
+        console.log("Carrego o som chefe");
         const { sound: loadedSound, status } = await Audio.Sound.createAsync(
           { uri: music.audioUrl },
           { shouldPlay: false }
         );
         setSound(loadedSound);
         currentSound = loadedSound;
+
         if (status.isLoaded && status.durationMillis !== undefined) {
           setDuration(status.durationMillis / 1000);
         }
@@ -38,30 +41,31 @@ export default function id() {
 
     return () => {
       if (currentSound) {
+        console.log("Descarrego o som ae");
         currentSound.unloadAsync();
       }
       setIsPlaying(false);
     };
   }, [music?.audioUrl]);
 
-  // useEffect(() => {
-  //   let interval: number;
+  useEffect(() => {
+    let interval: number;
 
-  //   const updateValue = async () => {
-  //     if (sound) {
-  //       const status = await sound.getStatusAsync();
-  //       if (status.isLoaded && status.positionMillis !== undefined) {
-  //         setValue(Math.floor(status.positionMillis / 1000));
-  //       }
-  //     }
-  //   };
+    if (sound && isPlaying) {
+      interval = setInterval(async () => {
+        const status = await sound.getStatusAsync();
+        if (status.isLoaded && status.positionMillis !== undefined) {
+          const currentSeconds = Math.floor(status.positionMillis / 1000);
+          setValue(currentSeconds);
+          // console.log(`Tempo atual: ${currentSeconds}s`);
+        }
+      }, 1000);
+    }
 
-  //   if (isPlaying) {
-  //     interval = setInterval(updateValue, 1000);
-  //   }
-
-  //   return () => clearInterval(interval);
-  // }, [isPlaying, sound]);
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [sound, isPlaying]);
 
   const handlePlayPause = async () => {
     if (sound) {
@@ -113,22 +117,7 @@ export default function id() {
       <Text style={styles.artist}>{music?.artist}</Text>
 
       <View style={styles.sliderContainer}>
-        <Slider
-          style={styles.slider}
-          value={Math.floor(value)}
-          onValueChange={(val) => setValue(Math.floor(val))}
-          onSlidingComplete={async (val) => {
-            if (sound) {
-              await sound.setPositionAsync(val * 1000);
-            }
-          }}
-          minimumValue={0}
-          allowTouchTrack
-          minimumTrackTintColor="#34D1BF"
-          maximumTrackTintColor="#aaa"
-          thumbTintColor="#34D1BF"
-          thumbStyle={{ width: 10, height: 10, borderRadius: 5 }}
-        />
+        <ProgessBar progress={(value / duration) * 100} />
         <View style={styles.timeContainer}>
           <Text style={styles.timeText}>0:00</Text>
 

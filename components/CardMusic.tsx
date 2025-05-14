@@ -2,6 +2,7 @@ import { View, Text, TouchableOpacity, Image, StyleSheet } from "react-native";
 import React, { useState } from "react";
 import { useRouter } from "expo-router";
 import { Icon } from "react-native-elements";
+import { useActionSheet } from "@expo/react-native-action-sheet";
 
 type cardProps = {
   id: string;
@@ -12,9 +13,50 @@ type cardProps = {
 
 export default function CardMusic({ id, title, artist, imgUrl }: cardProps) {
   const router = useRouter();
+  const { showActionSheetWithOptions } = useActionSheet();
 
   const onPress = () => {
     router.push(`/post/${id}`);
+  };
+
+  const onPressAction = () => {
+    const options = ["Deletar", "Buscar por artista", "Cancelar"];
+    const destructiveButtonIndex = 0;
+    const cancelButtonIndex = 2;
+
+    showActionSheetWithOptions(
+      {
+        options,
+        cancelButtonIndex,
+        destructiveButtonIndex,
+      },
+      (selectedIndex?: number) => {
+        if (selectedIndex === undefined) {
+          console.log("Nenhuma ação selecionada");
+          return;
+        }
+        switch (selectedIndex) {
+          case 0:
+            console.log("Deletar selecionado");
+            break;
+
+          case 1:
+            console.log("Buscar Artista");
+            router.push({
+              pathname: "/search",
+              params: { searchAuto: artist },
+            });
+            break;
+
+          case cancelButtonIndex:
+            console.log("Ação cancelada");
+            break;
+
+          default:
+            console.log("Nenhuma ação selecionada");
+        }
+      }
+    );
   };
 
   return (
@@ -32,7 +74,7 @@ export default function CardMusic({ id, title, artist, imgUrl }: cardProps) {
           <Text style={styles.subTitle}>{artist}</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={onPressAction}>
         <Icon
           name="ellipsis-vertical"
           type="ionicon"
