@@ -43,4 +43,4 @@ O componente de Slider assim como o de icones foi utilizado
 #Outras informações
 Todos os audios utilizados estão no repositorio, mas na branch audios
 
-Na versão atual é normal o Slider não funcionar !_!
+##### **Na versão atual é normal o Slider não funcionar !_!**
